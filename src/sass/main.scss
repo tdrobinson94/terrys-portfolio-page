@@ -17,8 +17,8 @@ html{
       .top_button{
         z-index: 5;
         position: fixed;
-        bottom: 10px;
-        right: 10px;
+        bottom: 15px;
+        right: 15px;
         border-radius: 100%;
         border: none;
         background: #E53935;
@@ -54,6 +54,7 @@ html{
           background: none;
           border: none;
           transition: color .2s ease-in-out;
+          outline: none;
         }
         .title:hover{
           color: #E53935;
@@ -65,6 +66,7 @@ html{
           border: none;
           color: white;
           transition: color .2s ease-in-out;
+          outline: none;
         }
         .link:hover{
           color: #E53935;
@@ -76,83 +78,122 @@ html{
           border-radius: 4px;
         }
       }
-      .introduction{
+      .page_content{
         position: absolute;
         top: 100px;
         width: 100%;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        .introduction_content{
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          .head_shot{
-            margin: 10px;
-            padding: 10px;
-            border-right: 1px solid #0091ea;
-          }
-          .work_title{
-            margin-left: 20px;
-            font-size: 30px;
-          }
-        }
-      }
-      .about{
-        position: absolute;
-        top: 400px;
-        width: 100%;
-        height: 600px;
-        background: #0091ea;
-        .about_content{
+        .introduction{
           display: flex;
           justify-content: center;
-          flex-wrap: wrap;
-          .a_titles{
-            font-size: 50px;
-            width: 100%;
-            text-align: center;
-          }
-          p{
-            font-size: 25px;
-            text-align: center;
-          }
-        }
-      }
-      .portfolio{
-        // background: #0091ea;
-        position: absolute;
-        top: 1000px;
-        width: 100%;
-        // padding: 20px;
-        .portfolio_content{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          .portfolio_title{
-            width: 100%;
-            text-align: center;
-            font-size: 50px;
-            margin: 20px;
-          }
-          .project_box{
-            border: 1px solid #607D8B;
-            padding: 5px;
-            text-align: center;
-            flex-wrap: wrap;
-            height: 250px;
-            width: 300px;
-            margin: 10px;
-            border-radius: 4px;
-            .project_image{
-              width: 275px;
-              height: 200px;
-              border-radius: 4px;
+          margin: 20px;
+          .introduction_content{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .head_shot{
+              margin: 10px;
+              padding: 10px;
+              border-right: 1px solid #0091ea;
             }
-            .project_title{
+            .work_title{
+              margin-left: 20px;
+              font-size: 30px;
+            }
+          }
+        }
+        .about{
+          padding: 100px 0;
+          background: #0091ea;
+          .about_content{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .a_titles{
+              font-size: 50px;
+              width: 100%;
+              text-align: center;
+              margin: 20px 0;
+              font-weight: bold;
+            }
+            p{
+              font-size: 25px;
+              text-align: center;
+            }
+          }
+        }
+        .portfolio{
+          padding: 100px 0px;
+          .portfolio_content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .portfolio_title{
+              width: 100%;
+              text-align: center;
+              font-size: 50px;
+              margin: 20px 0;
+              font-weight: bold;
+            }
+            .project_box{
+              border: 1px solid #607D8B;
+              padding: 5px;
+              text-align: center;
+              flex-wrap: wrap;
+              height: 250px;
+              width: 300px;
+              margin: 10px;
+              border-radius: 4px;
+              .project_image{
+                width: 275px;
+                height: 200px;
+                border-radius: 4px;
+              }
+              .project_title{
+                font-size: 25px;
+              }
+            }
+          }
+        }
+        .contact{
+          padding: 100px 0;
+          background: #0091EA;
+          .contact_content{
+            text-align: center;
+            .contact_title{
+              width: 100%;
+              text-align: center;
+              font-size: 50px;
+              margin: 20px 0;
+              font-weight: bold;
+            }
+            .info{
+              text-decoration: none;
+              color: white;
+              line-height: 40px;
               font-size: 25px;
             }
+            .github{
+              color: #E53935;
+              transition: opacity .2s ease-in-out;
+            }
+            .github:hover{
+              opacity: .5;
+              transition: opacity .2s ease-in-out;
+            }
+          }
+        }
+        .bottom_bar{
+          height: 100px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background: #607D8B;
+          .copyright{
+            color: white;
+          }
+          .social_media{
+            color: white;
           }
         }
       }
