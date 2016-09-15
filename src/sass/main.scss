@@ -26,10 +26,19 @@ html{
         padding: 10px;
         width: 60px;
         outline: none;
+        transition: opacity opacity .2s ease-in-out;
         span{
           color: white;
           font-size: 30px;
         }
+      }
+      .top_button:hover{
+        opacity: .8;
+        transition: opacity .2s ease-in-out;
+      }
+      .top_button:active{
+        opacity: .5;
+        transition: opacity .2s ease-in-out;
       }
       .background{
         .background_image{
@@ -76,6 +85,15 @@ html{
           background: #0091EA;
           padding: 10px;
           border-radius: 4px;
+          transition: opacity .2s ease-in-out;
+        }
+        .contact_link:hover{
+          opacity: .8;
+          transition: opacity .2s ease-in-out;
+        }
+        .contact_link:active{
+          opacity: .5;
+          transition: opacity .2s ease-in-out;
         }
       }
       .page_content{
@@ -114,10 +132,48 @@ html{
               text-align: center;
               margin: 20px 0;
               font-weight: bold;
+              color: white;
             }
             p{
               font-size: 25px;
+              padding: 0 100px;
               text-align: center;
+              color: white
+            }
+            .skill_images{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              .img_box{
+                text-align: center;
+                margin: 20px;
+                .img{
+                  width: 110px;
+                  height: 85px
+                }
+                span{
+                  color: white;
+                  font-size: 20px;
+                }
+              }
+            }
+            .resume_link{
+              margin-top: 40px;
+              padding: 15px;
+              background: #E53935;
+              border-radius: 4px;
+              text-decoration: none;
+              color: white;
+              transition: opacity .2s ease-in-out;
+            }
+            .resume_link:hover{
+              opacity: .8;
+              transition: opacity .2s ease-in-out;
+            }
+            .resume_link:active{
+              opacity: .5;
+              transition: opacity .2s ease-in-out;
             }
           }
         }
@@ -166,6 +222,7 @@ html{
               font-size: 50px;
               margin: 20px 0;
               font-weight: bold;
+              color: white;
             }
             .info{
               text-decoration: none;

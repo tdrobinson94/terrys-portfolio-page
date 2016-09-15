@@ -20,6 +20,12 @@ $('.top_button').on('click', function(){
   $('body').animate({scrollTop: '0px'}, 750, "swing");
 })
 
-if ($(window).width() < 650){
-  $('.top_button').hide();
-}
+$(window).scroll(function(){
+  var top = $(window).scrollTop();
+  if (top > 300){
+    $('.top_button').show();
+  }
+  else {
+    $('.top_button').hide();
+  }
+})
