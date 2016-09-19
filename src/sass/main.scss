@@ -74,12 +74,13 @@ html{
           background: none;
           border: none;
           color: white;
-          transition: color .2s ease-in-out;
+          transition: all .2s ease-in-out;
           outline: none;
         }
         .link:hover{
           color: #E53935;
-          transition: color .2s ease-in-out;
+          opacity: .8;
+          transition: all .2s ease-in-out;
         }
         .contact_link{
           background: #0091EA;
@@ -192,17 +193,17 @@ html{
               font-weight: bold;
             }
             .project_box{
-              border: 1px solid #607D8B;
+              // border: 1px solid #607D8B;
               padding: 5px;
               text-align: center;
               flex-wrap: wrap;
-              height: 250px;
-              width: 300px;
+              height: 200px;
+              width: 250px;
               margin: 10px;
               border-radius: 4px;
               .project_image{
-                width: 275px;
-                height: 200px;
+                width: 225px;
+                height: 175px;
                 border-radius: 4px;
               }
               .project_title{
@@ -213,7 +214,7 @@ html{
         }
         .contact{
           padding: 100px 0;
-          background: #0091EA;
+          background: #0091ea;
           .contact_content{
             text-align: center;
             .contact_title{
