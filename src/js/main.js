@@ -19,13 +19,27 @@ $('.title').on('click', function(){
 $('.top_button').on('click', function(){
   $('body').animate({scrollTop: '0px'}, 750, "swing");
 })
+if ($(window).scrollTop() < 300 || $(window).width() < 650){
+  $('.top_button').hide();
+}
 
 $(window).scroll(function(){
   var top = $(window).scrollTop();
-  if (top > 300){
-    $('.top_button').show();
+  var width = $(window).width();
+  if (top < 300 || width < 650){
+    $('.top_button').hide();
   }
   else {
+    $('.top_button').show();
+  }
+})
+
+$(window).resize(function(){
+  var width = $(window).width();
+  var top = $(window).scrollTop();
+  if (width < 650 || top < 300){
     $('.top_button').hide();
+  } else {
+    $('.top_button').show();
   }
 })
