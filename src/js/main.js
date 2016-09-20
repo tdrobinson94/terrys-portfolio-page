@@ -1,19 +1,19 @@
 import $ from 'jquery';
 
 $('.portfolio_link').on('click', function(){
-  $('body').animate({scrollTop: $('.portfolio').offset().top}, 1500);
+  $('body').animate({scrollTop: $('.portfolio').offset().top}, 750);
 });
 
 $('.about_link').on('click', function(){
-  $('body').animate({scrollTop: $('.about').offset().top}, 1500);
+  $('body').animate({scrollTop: $('.about').offset().top}, 750);
 })
 
 $('.contact_link').on('click', function(){
-  $('body').animate({scrollTop: $('.contact').offset().top}, 1500);
+  $('body').animate({scrollTop: $('.contact').offset().top}, 750);
 })
 
 $('.title').on('click', function(){
-  $('body').animate({scrollTop: '0px'}, 1500);
+  $('body').animate({scrollTop: '0px'}, 750);
 })
 
 $('.top_button').on('click', function(){
@@ -52,6 +52,13 @@ $(window).resize(function(){
     $('.link_box').show();
   }
 })
+
+var width = $(window).width();
+if (width <= 550){
+  $('.link_box').hide();
+} else {
+  $('.link_box').show();
+}
 
 $('.menu_tab').on('click', function(){
   $('.link_box').slideToggle();
