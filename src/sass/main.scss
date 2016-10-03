@@ -306,7 +306,7 @@ html{
           width: 100%;
 
           .title{
-            font-size: 25px;
+            font-size: 30px;
             position: absolute;
             top: 10px;
             width: 100%;
@@ -319,16 +319,15 @@ html{
           .link_box{
             position: absolute;
             top: 55px;
-            // left: 0;
             width: 100%;
-            // background: #607D8B;
-            margin: 0;
-            // border-top: 1px solid #0091ea;
+            height: 44px;
+            // background: #0091ea;
+            margin: 0px;
+            border-top: 1px solid #0091ea;
             justify-content: center;
-            // z-index: 3;
-            // text-align: center;
+            align-items: center;
             .link{
-              margin: 1px;
+              margin: 0 4%;
               background: none;
               border: none;
               color: white;
