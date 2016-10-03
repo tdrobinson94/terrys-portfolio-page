@@ -23,17 +23,17 @@ $('.top_button').on('click', function(){
 // $('.menu_tab').click(function(){
 //   $('.link_box').slideToggle();
 // })
-function menuTab(){
-  if ($(window).width() <= 550){
-    $('.menu_tab').click(function(){
-      $('.link_box').slideToggle();
-    })
-    $('.link').click(function(){
-      $('.link_box').slideUp();
-    })
-    $('.title').click(function(){
-      $('.link_box').slideUp();
-    })
-  }
-}
-$(window).resize(menuTab());
+// function menuTab(){
+//   if ($(window).width() <= 550){
+//     $('.menu_tab').click(function(){
+//       $('.link_box').slideToggle();
+//     })
+//     $('.link').click(function(){
+//       $('.link_box').slideUp();
+//     })
+//     $('.title').click(function(){
+//       $('.link_box').slideUp();
+//     })
+//   }
+// }
+// $(window).resize(menuTab());
