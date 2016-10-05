@@ -218,18 +218,33 @@ html{
               padding: 5px;
               text-align: center;
               flex-wrap: wrap;
-              height: 200px;
-              width: 250px;
+              height: 205px;
+              width: 275px;
               margin: 10px;
               border-radius: 4px;
-              .project_image{
-                width: 225px;
-                height: 175px;
-                border-radius: 4px;
+              overflow: hidden;
+              transition: height .5s ease-in-out;
+              a{
+                text-decoration: none;
+                color: black;
+                transition: color .2s ease-in-out;
+                .project_image{
+                  width: 215px;
+                  height: 175px;
+                  border-radius: 4px;
+                }
+                .project_title{
+                  font-size: 25px;
+                }
               }
-              .project_title{
-                font-size: 25px;
+              a:hover{
+                color: #e53935;
+                transition: color .2s ease-in-out;
               }
+            }
+            .project_box:hover{
+              height: 450px;
+              transition: height .5s ease-in-out;
             }
           }
         }
@@ -273,6 +288,12 @@ html{
           }
           .social_media{
             color: white;
+            text-decoration: none;
+            transition: color .2s ease-in-out;
+          }
+          .social_media:hover{
+            color: #e53935;
+            transition: color .2s ease-in-out;
           }
         }
       }
@@ -320,10 +341,10 @@ html{
             position: absolute;
             top: 55px;
             width: 100%;
-            height: 44px;
+            height: 45px;
             // background: #0091ea;
             margin: 0px;
-            border-top: 1px solid #0091ea;
+            // border-top: 1px solid #0091ea;
             justify-content: center;
             align-items: center;
             .link{
@@ -471,6 +492,12 @@ html{
             }
             .social_media{
               color: white;
+              text-decoration: none;
+              transition: color .2s ease-in-out;
+            }
+            .social_media:hover{
+              color: #e53935;
+              transition: color .2s ease-in-out;
             }
           }
         }
