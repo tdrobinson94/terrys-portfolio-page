@@ -213,15 +213,33 @@ html{
               font-weight: bold;
             }
             .project_box{
-              border: 1px solid red;
               width: 250px;
-              .project_title{
-                margin: 0;
-                text-align: center;
+              margin: 10px;
+              .link{
+                text-decoration: none;
+                color: black;
+                transition: color .3s ease-in-out;
+                .landscape{
+                  width: 250px;
+                  height: 190px;
+                  border-radius: 5px;
+                }
+                .terrysays{
+                  width: 250px;
+                  height: 250px;
+                }
+                .project_title{
+                  margin: 0;
+                  text-align: center;
+                }
               }
               .project_desc{
                 margin: 0;
                 text-align: center;
+              }
+              .link:hover{
+                color: #E53935;
+                transition: color .3s ease-in-out;
               }
             }
           }
@@ -414,10 +432,51 @@ html{
               }
             }
           }
-
-
-
-
+          .portfolio{
+            padding: 100px 0px;
+            .portfolio_content{
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              .portfolio_title{
+                width: 100%;
+                text-align: center;
+                font-size: 50px;
+                margin: 20px 0;
+                font-weight: bold;
+              }
+              .project_box{
+                width: 350px;
+                margin: 10px;
+                .link{
+                  text-decoration: none;
+                  color: black;
+                  transition: color .3s ease-in-out;
+                  .landscape{
+                    width: 350px;
+                    height: 290px;
+                    border-radius: 5px;
+                  }
+                  .terrysays{
+                    width: 350px;
+                    height: 350px;
+                  }
+                  .project_title{
+                    margin: 0;
+                    text-align: center;
+                  }
+                }
+                .project_desc{
+                  margin: 0;
+                  text-align: center;
+                }
+                .link:hover{
+                  color: #E53935;
+                  transition: color .3s ease-in-out;
+                }
+              }
+            }
+          }
           .contact{
 
             .contact_content{
