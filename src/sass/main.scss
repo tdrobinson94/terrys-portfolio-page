@@ -203,7 +203,6 @@ html{
           padding: 100px 0px;
           .portfolio_content{
             display: flex;
-            align-items: center;
             justify-content: center;
             flex-wrap: wrap;
             .portfolio_title{
@@ -214,37 +213,16 @@ html{
               font-weight: bold;
             }
             .project_box{
-              // border: 1px solid #607D8B;
-              padding: 5px;
-              text-align: center;
-              flex-wrap: wrap;
-              height: 205px;
-              width: 275px;
-              margin: 10px;
-              border-radius: 4px;
-              overflow: hidden;
-              transition: height .5s ease-in-out;
-              a{
-                text-decoration: none;
-                color: black;
-                transition: color .2s ease-in-out;
-                .project_image{
-                  width: 215px;
-                  height: 175px;
-                  border-radius: 4px;
-                }
-                .project_title{
-                  font-size: 25px;
-                }
+              border: 1px solid red;
+              width: 250px;
+              .project_title{
+                margin: 0;
+                text-align: center;
               }
-              a:hover{
-                color: #e53935;
-                transition: color .2s ease-in-out;
+              .project_desc{
+                margin: 0;
+                text-align: center;
               }
-            }
-            .project_box:hover{
-              height: 450px;
-              transition: height .5s ease-in-out;
             }
           }
         }
@@ -436,35 +414,10 @@ html{
               }
             }
           }
-          .portfolio{
 
-            .portfolio_content{
 
-              .portfolio_title{
-                width: 100%;
 
-              }
-              .project_box{
-                padding: 5px;
-                text-align: center;
-                flex-wrap: wrap;
-                display: flex;
-                justify-content: center;
-                height: 300px;
-                width: 375px;
-                margin: 10px;
-                border-radius: 4px;
-                .project_image{
-                  width: 350px;
-                  height: 275px;
-                  border-radius: 4px;
-                }
-                .project_title{
-                  margin: 10px;
-                }
-              }
-            }
-          }
+
           .contact{
 
             .contact_content{
