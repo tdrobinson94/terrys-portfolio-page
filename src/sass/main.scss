@@ -129,6 +129,9 @@ html{
               margin: 10px;
               padding: 10px;
               border-right: 1px solid #0091ea;
+              border-radius: 100%;
+              height: 300px;
+              width: 300px;
             }
             .work_title{
               margin-left: 20px;
@@ -387,6 +390,7 @@ html{
               flex-wrap: wrap;
               .head_shot{
                 border-right: none;
+                border-bottom: 1px solid #0091ea;
               }
               .work_title{
                 font-size: 30px;
