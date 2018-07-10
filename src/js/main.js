@@ -8,6 +8,10 @@ $('.about_link').on('click', function(){
   $('body, html').animate({scrollTop: $('.about').offset().top}, 750);
 })
 
+$('.skills_link').on('click', function(){
+  $('body, html').animate({scrollTop: $('.skills_title').offset().top - 100}, 750);
+})
+
 $('.contact_link').on('click', function(){
   $('body, html').animate({scrollTop: $('.contact').offset().top}, 750);
 })
